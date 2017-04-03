@@ -1,0 +1,38 @@
+<div class="content">
+  <div class="items">
+
+    <div class="currency">
+      <form class="currencyForm">
+        <input ng-model="$ctrl.gold" type="text" class="currencyAmount">
+
+        <input type="submit" value="Update Currency Amount">
+      </form>
+    </div>
+
+    <form class="newItemForm">
+      <input ng-model="$ctrl.itemName" type="text" class="itemName" placeholder="Enter Item Name">
+      <input ng-model="$ctrl.itemDescription" type="text" class="itemDescription" placeholder="Enter Item Description">
+      <input type="submit" class="addItem" value="Add Item">
+    </form>
+
+    <div class="item" data-type="0">
+      <div class="itemName">
+        Mail Armor
+      </div>
+      <div class="itemDescription">
+        {{$ctrl.itemDescription}}
+      </div>
+      <div>
+
+      </div>
+      <input ng-model="$ctrl.armor">
+
+
+
+
+
+
+
+  </div>
+  <footer><a href="#!/">Main Page</a></footer>
+</div>

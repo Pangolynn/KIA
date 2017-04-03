@@ -1,0 +1,149 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+/*  seed css ^ */
+
+.view-frame {
+  display: flex;
+}
+
+
+body {
+   text-align: center;
+   font-size: 100%; //avoid IE resizing issues with em
+   width: 100%;
+
+   height: 100%;
+   padding: 25px;
+   margin: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background: lightgray url("../img/dragon.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  display: block;
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+}
+
+header {
+   height: 250px;
+   width: 200px;
+   margin: auto;
+   font-size: 1em;
+   color: white;
+   text-shadow: 3px 2px 4px #000000;
+}
+
+header button {
+   margin-bottom: 5px;
+   width: 50px;
+   height: 45px;
+   border: 6px outset #c7cbd4;
+   opacity: 1;
+   text-shadow: none;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+   background-color: steelblue;
+}
+
+button:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#selected:hover {
+  text-shadow: none;
+}
+
+#selected {
+  opacity: 0.7;
+  border: 3px inset #c7cbd4;
+}
+
+.toggleUser {
+   font-size: .75em;
+}
+
+.content {
+   height: 100%;
+   min-height: 100%;
+   position: relative;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   padding-bottom: 2em;
+}
+
+.content button {
+   display: block;
+   font-size: 1em;
+   height: 100px;
+   margin: 0 auto;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   background-color: steelblue;
+   border: 6px outset #c7cbd4;
+   text-align: center;
+   color: white;
+   opacity: .7;
+   width: 15em;
+   margin-bottom: 2em;
+}
+
+input[type=submit] {
+  font-size: 1.1em;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: steelblue;
+  border: 6px outset #c7cbd4;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+footer {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+footer:hover {
+  font-size: 1.25em;
+}

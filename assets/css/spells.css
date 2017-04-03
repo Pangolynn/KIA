@@ -1,0 +1,72 @@
+.spells {
+  opacity: .7;
+  color: white;
+  text-shadow: 2px 1px 1px black;
+  font-size: .7em;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-bottom: 1em;
+  width: 500px;
+}
+
+.spell {
+  text-align: left;
+  border: 6px outset #c7cbd4;
+  background-color: steelblue;
+  padding: 1em;
+}
+
+.spellName {
+  text-decoration: underline;
+  margin-bottom: .5em;
+}
+
+
+.newSpellBox {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.newSpellForm {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+#hidden {
+  visibility: show;
+
+}
+
+.newSpellForm {
+  margin: auto;
+  transition: visibility 2s;
+  visibility: show;
+}
+
+input[type=text] {
+  margin: 25px 0;
+  background-color: #1E2C47;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border: 6px outset #c1d4f7;
+}
+
+textarea {
+  height: 200px;
+  width: 400px;
+  text-align: top;
+  height: 200px;
+  background-color: #1E2C47;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  border: 6px outset #c1d4f7;
+  margin-bottom: 1em;
+}
+
+input[type=submit] {
+  margin-bottom: 1.5em;
+}
